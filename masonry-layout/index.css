@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 12px;
+    font-family: Arial, sans-serif; 
+}
+
+.grid-container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    
+}
+
+.highlited-container {
+    padding: 12px;
+    border: 2px solid #f8a46a;
+    background-color: #fff4e6;
+    border-radius: 8px;
+}
+
+.highlited-item {
+    background-color: #fddfb9;
+    border: 1px solid #f8a46a;
+    border-radius: 8px;
+}
+
+.height-xs {
+    height: 24px;
+}
+
+.height-sm {
+    height: 32px;
+}
+
+.height-md {
+    height: 64px;
+}
+
+.height-lg {
+    height: 96px;
+}
+
+.height-xl {
+    height: 128px;
+}
