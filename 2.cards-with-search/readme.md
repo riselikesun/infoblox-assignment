@@ -26,3 +26,5 @@ index.html loades all the js and cs files.
 ![screenshot](image.png)
 
 ---
+
+[<- All Assignments](../readme.md)

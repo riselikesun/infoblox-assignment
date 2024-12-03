@@ -15,4 +15,7 @@
 
 ## 🖼️ ScreenShot
 ![screenshot](image.png)
+
 ---
+
+[<- All Assignments](../readme.md)

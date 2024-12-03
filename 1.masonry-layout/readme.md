@@ -20,3 +20,5 @@ To view the project:
 ![screenshot](image.png)
 
 ---
+
+[<- All Assignments](../readme.md)

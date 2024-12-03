@@ -17,4 +17,7 @@
 
 - View Widget in posts 
 ![View Recent post viewer widget](image-1.png)
+
 ---
+
+[<- All Assignments](../readme.md)
