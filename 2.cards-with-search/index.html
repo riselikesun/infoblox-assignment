@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="data.js" defer></script>
+    <script src="getFilteredData.js" defer></script>
+    <script src="cardsHandler.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Cards with search</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <input
+          id="search-bar-div"
+          class="search-bar"
+          type="text"
+          placeholder="Search by Title or Author"
+        />
+        <div id="cards-container-div" class="cards-container"></div>
+        <div id="loading-div" class="loading dots">Loading</div>
+      </div>
+    </div>
+  </body>
+</html>
