@@ -1,6 +1,6 @@
 <?php
 // clases uses example
- 
+
 require_once 'Company/Person.php';
 require_once 'Company/Manager.php';
 require_once 'Company/Staff/Employee.php';
@@ -23,6 +23,6 @@ $manager->addEmployee($employee3);
 echo "\nManager: " . $manager->getName() . "\n";
 echo "Employees under " . $manager->getName() . ":\n";
 
-foreach($manager->getEmployees() as $employee){
-    echo  '- ' . $employee->getName() . ", ". $employee->getDesignation() . ", ID: ". $employee->getEmployeeID() . ", Age: ". $employee->getAge() . "\n";
+foreach ($manager->getEmployees() as $employee) {
+    echo  '- ' . $employee->getName() . ", " . $employee->getDesignation() . ", ID: " . $employee->getEmployeeID() . ", Age: " . $employee->getAge() . "\n";
 }
