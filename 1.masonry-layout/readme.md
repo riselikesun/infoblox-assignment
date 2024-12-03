@@ -15,3 +15,8 @@ To view the project:
 2. **Masonry Layout**: The `grid-auto-rows` property creates a masonry effect, where items stack based on their height and fill the available space in the grid container.
 
 ---
+
+## 🖼️ ScreenShot
+![screenshot](image.png)
+
+---

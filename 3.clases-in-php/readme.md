@@ -10,3 +10,9 @@
       php index.php
    ```
 4. The example code in `index.php` will demonstrate the usage of the `Person`, `Manager`, and `Employee` classes.
+
+---
+
+## 🖼️ ScreenShot
+![screenshot](image.png)
+---

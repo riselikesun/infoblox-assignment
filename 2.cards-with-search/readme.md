@@ -21,3 +21,8 @@ index.html loades all the js and cs files.
 - index.js combines everything to work
 
 ---
+
+## 🖼️ ScreenShot
+![screenshot](image.png)
+
+---
