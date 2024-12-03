@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Posts viewer
  * Description: A WordPress plugin to display recent posts from a specific category in a widget.
- * Version: 1.03
+ * Version: 1.04
  * Author: Suraj Sharma
  * Author URI: https://riselike.com
  * License: GPLv3
@@ -39,6 +39,7 @@ class Post_Viewer_Widget extends WP_Widget
         $category_id = $instance['category_id'];
 
         echo $args['before_widget'];
+        echo '<h3>Recent Post Viewer</h3>';
 
         $query_args = array(
             'post_type' => 'post',
