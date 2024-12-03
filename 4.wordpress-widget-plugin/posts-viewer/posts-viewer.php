@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Posts viewer
  * Description: A WordPress plugin to display recent posts from a specific category in a widget.
- * Version: 1.0
+ * Version: 1.02
  * Author: Suraj Sharma
  * Author URI: https://riselike.com
  * License: GPLv3
@@ -18,7 +18,7 @@
 			'classname' => 'post_viewer_widget',
 			'description' => 'A widget displaying recent posts from a specific category',
 		);
-		parent::__construct( 'post_viewer_widget', 'My Widget', $widget_ops );
+		parent::__construct( 'post_viewer_widget', 'Post Viewer', $widget_ops );
 	}
 
 	/**
@@ -37,7 +37,23 @@
 	 * @param array $instance The widget options
 	 */
 	public function form( $instance ) {
-		// outputs the options form on admin
+        $category_id = ! empty( $instance['category_id'] ) ? $instance['category_id'] : '';
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'category_id' ); ?>">Select Category:</label>
+            <?php
+            wp_dropdown_categories( array(
+                'show_option_all' => 'All Categories',
+                'name' => $this->get_field_name( 'category_id' ),
+                'id' => $this->get_field_id( 'category_id' ),
+                'selected' => $category_id,
+                'hierarchical' => true,
+                'show_count' => true,
+                'hide_empty' => false,
+            ) );
+            ?>
+        </p>
+        <?php
 	}
 
 	/**
@@ -49,7 +65,10 @@
 	 * @return array
 	 */
 	public function update( $new_instance, $old_instance ) {
-		// processes widget options to be saved
+		$instance = $old_instance;
+        $instance['category_id'] = strip_tags($new_instance['category_id']);
+
+        return $instance;
 	}
 }
 
